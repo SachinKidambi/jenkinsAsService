@@ -1,0 +1,9 @@
+[Unit]
+Description = testing the service
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/home/ec2-user/jen.sh start
+ExecStop=/home/ec2-user/jen.sh stop
+[Install]
+WantedBy = multi-user.target
